@@ -1,0 +1,17 @@
+[{
+  "id":1,
+  "text":"无组织管控车辆",
+  "attributes":{"url":""},
+  "disabled":"true",
+  "children":[
+    {
+      "id":12,
+      "text":"联合特钢公司台账",
+      "attributes":{"url":"inout?controllerDoor="}
+    },
+    {
+      "id":13,
+      "text":"公司车辆台账",
+      "attributes":{"url":"inout?controllerDoor="}
+    }]
+}]

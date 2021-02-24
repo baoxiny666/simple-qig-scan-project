@@ -1,0 +1,15 @@
+html,body{width:100%;height:100%}
+*{margin: 0;padding:0;}
+.pics_div {
+	width:200px;
+	height: 123px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.pics {
+	width: 600px;
+	height: 450px;
+	background-size: 200px 123px;
+	background: url(../img/error.png) no-repeat;
+}

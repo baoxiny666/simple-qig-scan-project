@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+    <mapper namespace="com.tglh.simpleqigscanproject.mapper.QigScanMapper">
+        <select id="selectFuSelect" resultType="com.tglh.simpleqigscanproject.entity.DepartMent">
+             select
+                id,
+                depart_name departName,
+                depart_pid departPid
+             from sys_department
+             where departPid = 0
+        </select>
+
+        <select id="selectSonSelect" parameterType="java.lang.String" resultType="com.tglh.simpleqigscanproject.entity.DepartMent">
+            select
+                id,
+                depart_name departName,
+                depart_pid departPid
+             from sys_department
+             where departPid = #{fuNumber}
+        </select>
+    </mapper>
